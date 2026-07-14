@@ -76,7 +76,7 @@ def main():
         dockerfile = dockerfile + "COPY mindthegapps /\n"
         tags.append("mindthegapps")
     if args.ndk:
-        if args.android in ["11.0.0", "12.0.0", "12.0.0_64only"]:
+        if args.android in ["11.0.0", "12.0.0", "13.0.0", "14.0.0"]:
             arch = helper.host()[0]
             if arch == "x86" or arch == "x86_64":
                 Ndk().install()
